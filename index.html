@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Вычислить площадь трапеции</title>
+</head>
+<body>
+<h3>Вычислить площадь трапеции</h3>
+<input type="text" name="" placeholder="Введите первое основание" id="side1" >
+<input type="text" name="" placeholder="Введите второе основание" id="side2" >
+<input type="text" name="" placeholder="Введите высоту" id="side3" >
+<button id="go">Вычислить</button>
+
+<p>Площадь трапеции: </p>
+<input type="text" name="" id="Area"><br><br>
+
+</body>
+<script type="text/javascript">
+
+var side1 = document.getElementById('side1');
+var side2 = document.getElementById('side2');
+var side3 = document.getElementById('side3');
+var Area = document.getElementById('Area');
+var go = document.getElementById('go');
+
+go.addEventListener('click', function() {
+ Area.value = (1/2*(side3.value) * (parseInt(side1.value) + parseInt(side2.value)));
+});
+</script>
+</html>
